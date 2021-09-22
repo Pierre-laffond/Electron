@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+        <title>Files Manager</title>
+
+        <!-- import fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+        <!-- import styles -->
+        <link rel='stylesheet' href='../css/styles.css'>
+    </head>
+
+    <body class='app'>
+        
+        <script>
+            // function affichZero(nombre) {
+                console.log(today.getDate());
+                console.log(today.toString());
+                console.log(today.getMonth());
+        </script> 
+            
+
+        <!-- upload area -->
+        <div id='uploader' class='app__uploader'>
+            <div class='app__uploader__icon-area'>
+                <img src='../assets/upload.svg' class='app__uploader__icon-area__icon' />
+                <p class='app__uploader__icon-area__text'>Drag file(s) to add</p>
+            </div>
+            <div class='app__uploader__button-area'>
+                <button class='app__uploader__button-area__button' onclick='openDialog()'>Click To Add Files</button>
+            
+        </div>
+        </div>
+
+        <!-- file list -->
+        <div id='filelist' class='app__files'></div>
+            <p>Il est  : <div id="heure_exacte"></div><br>
+            L'heure s'actualise à chaque seconde.
+            </p>
+        <!-- require render JavaScript -->
+        <script>
+            require( '../js/renderer.js' );
+           
+        </script>
+       
+            <!-- // var d = new Date();
+            // var date = d.getFullYear()+'-'+(d.getMonth()+1)+'-'+d.getDate();
+            // console.log(date);  -->
+        
+        
+    </body>
+</html>
